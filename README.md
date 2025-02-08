@@ -27,7 +27,7 @@ Ensure you have the following software installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/dmr2.git
+    git clone https://github.com/aegersz/dmr2.git
     ```
 
 2. Navigate into the project directory:

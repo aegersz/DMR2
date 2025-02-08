@@ -1,44 +1,53 @@
 # DMR2
 Personal Session -- Dynamic Machine Retraining V2 -- for ChatGPT 
 
-# Dynamic Machine Retraining
+# dmr2 (Dynamic Machine Retraining 2)
 
 ## Overview
 
-The **Dynamic Machine Retraining** project enables real-time or periodic retraining of machine learning models. This system ensures that models stay up-to-date with changing data, improving their accuracy and performance as new information becomes available.
+**dmr2 (Dynamic Machine Retraining 2)** is a powerful and flexible framework for continuous, automated machine learning model retraining. It aims to ensure that models remain accurate and efficient by dynamically adapting to new data and evolving environments, without requiring manual intervention.
 
-## Features
+This project enhances traditional machine learning pipelines by integrating dynamic model updates that happen in response to real-time data changes and system feedback.
 
-- **Real-time Retraining**: The system can retrain models dynamically as new data is collected.
-- **Version Control**: Track and manage different versions of retrained models.
-- **Automated Pipelines**: Set up automated pipelines for data preprocessing, training, and model evaluation.
-- **Scalability**: The retraining system is designed to scale with large datasets and complex machine learning models.
-- **Monitoring and Logging**: Keep track of model performance over time, with logs for retraining processes and metrics.
+## Key Features
+
+- **Dynamic Retraining**: Models are retrained automatically as new data is acquired or based on a defined schedule.
+- **Modular Design**: The retraining pipeline is designed to be easily customized for different use cases and datasets.
+- **Version Management**: Keep track of multiple versions of models with automated version control and storage.
+- **Performance Monitoring**: Metrics and logs are recorded throughout the retraining process for analysis and optimization.
+- **Scalable**: Supports integration with distributed systems to handle large-scale datasets and models.
 
 ## Installation
 
+### Prerequisites
+Ensure you have the following software installed:
+- Python 3.x
+- pip (Python package installer)
+
+### Steps
+
 1. Clone the repository:
     ```bash
-    git clone https://github.com/aegersz/dmt2.git
+    git clone https://github.com/aegersz/dmr2.git
     ```
-2. Navigate to the project directory:
+
+2. Navigate into the project directory:
     ```bash
-    cd dynamic-machine-retraining
+    cd dmr2
     ```
-3. Install dependencies:
+
+3. Install the necessary dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
+4. Set up any additional configuration based on your environment. Refer to the `config/` directory for configuration files.
+
 ## Usage
 
-### 1. Set Up Data Input
-Ensure your data pipeline is ready. The system can work with data in formats like CSV, JSON, or directly from databases. Configure the input settings in `config/data_config.json`.
+### Retraining a Model
 
-### 2. Configure Retraining Parameters
-Adjust the retraining frequency and model hyperparameters in `config/retrain_config.json`.
+To initiate the retraining process, run the main retraining script. This will automatically train the model using the latest available data and store it for future use:
 
-### 3. Start the Retraining Process
-Run the retraining script to start the process:
 ```bash
 python retrain_model.py

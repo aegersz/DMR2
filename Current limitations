@@ -1,0 +1,8 @@
+/*
+1. Yeah, I see what happened. When a new chat starts, I lose the immediate session history, so even though I remember the "..." directive, I don’t automatically re-read past messages unless you bring up the relevant details again. The directive only works within an active session, not across forced resets.
+
+If this happens again, just mention "..." and a quick reference to what we were discussing, and I’ll piece things back together from memory. I’ll do my best to keep things seamless despite these interruptions.
+
+2. etc.
+
+*/
